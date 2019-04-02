@@ -6,9 +6,9 @@
 		const $box		= $("#content-menu-box #box-open-menu");
 		const $closeTooltip = $("#close-tooltip");
 		const heightOfElements  = 41;
-		var posCounter = 0;
+		let posCounter = 0;
 
-		var settings = {
+		let settings = {
 			delay: 0,
 			positions: [5,15,25],
 			jumpLi: count($liNumber.length),
@@ -16,7 +16,7 @@
 			topLi: ($liNumber.length-1)*heightOfElements
 		}
 		
-		var setLiElemShow = {
+		let setLiElemShow = {
 			padding: "20px",
 			width: "180px",
 			height: "40px",
@@ -25,7 +25,7 @@
 			top: settings.topLi
 		}
 
-		var setLiElemHide = {
+		let setLiElemHide = {
 			padding: "0",
 			width: "40px",
 			height: "5px",
@@ -50,7 +50,7 @@
 			return set.counter
 		}
 
-		var tmpNum = settings.jumpLi;
+		let tmpNum = settings.jumpLi;
 
 		$liNumber.each(function(i){
 				
